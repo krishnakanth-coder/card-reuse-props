@@ -13,18 +13,23 @@ body {
 }
 
 /* Write CSS code here */
-
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 .card-list-container {
   list-style: none;
   padding: 10px;
 }
 .card-list {
   width: 100vw;
-  height: auto;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: flex-start;
+  justify-content: flex-between;
   align-items: center;
 }
 .header-card-header {

@@ -36,14 +36,14 @@ const cardsList = [
   },
 ]
 const CardItems = () => (
-  <li className="card-list">
+  <ul className="card-list">
     {cardsList.map(eachItem => (
       <CardsItems eachCard={eachItem} key={eachItem.id} />
     ))}
-  </li>
+  </ul>
 )
 const App = () => (
-  <div>
+  <div className="page-container">
     <h1 className="header-card-header">Learn 4.0 Technologies</h1>
     <p className="header-card-para">
       {`Get trained by alumni of IITs and top companies like Amazon, Microsoft,
@@ -51,9 +51,7 @@ const App = () => (
       Product Development`}
     </p>
     <div className="container-cards">
-      <ul className="card-list-container">
-        <CardItems />
-      </ul>
+      <CardItems />
     </div>
   </div>
 )
